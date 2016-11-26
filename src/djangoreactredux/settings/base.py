@@ -23,9 +23,6 @@ INSTALLED_APPS = (
     'rest_framework',
     'knox',
     'django_extensions',
-
-    'accounts',
-    'base'
 )
 
 MIDDLEWARE_CLASSES = (

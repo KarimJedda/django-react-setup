@@ -1,2 +1,4 @@
 .idea
 venv
+node_modules
+*.log

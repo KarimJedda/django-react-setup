@@ -11,7 +11,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['localhost']
 
 # Application definition
 
@@ -19,10 +19,12 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
-
+    'django.contrib.admin',
     'rest_framework',
     'knox',
     'django_extensions',
+
+    'dummy'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -34,9 +36,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware'
 )
 
-ROOT_URLCONF = 'djangoreactredux.urls'
+ROOT_URLCONF = 'sampleapp.urls'
 
-WSGI_APPLICATION = 'djangoreactredux.wsgi.application'
+WSGI_APPLICATION = 'sampleapp.wsgi.application'
 
 LANGUAGE_CODE = 'en-us'
 
@@ -48,7 +50,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-AUTH_USER_MODEL = 'accounts.User'
 
 ACCOUNT_ACTIVATION_DAYS = 7  # days
 

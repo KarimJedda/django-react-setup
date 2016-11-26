@@ -1,4 +1,4 @@
-from djangoreactredux.settings.staging import *  # NOQA (ignore all errors on this line)
+from sampleapp.settings.staging import *  # NOQA (ignore all errors on this line)
 
 DATABASES = {
     'default': {
